@@ -5,13 +5,13 @@
     <parent>
             <groupId>com.github.sfg-beer-works</groupId>
             <artifactId>sfg-brewery-bom</artifactId>
-            <version>1.0.23</version>
+            <version>1.0.7</version>
     </parent>
 
     <groupId>guru.springframework</groupId>
-    <artifactId>mssc-beer-service</artifactId>
+    <artifactId>msss-beer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mssc-beer-service</name>
+    <name>msss-beer-service</name>
     <description>MSSC Beer Service</description>
 
 
