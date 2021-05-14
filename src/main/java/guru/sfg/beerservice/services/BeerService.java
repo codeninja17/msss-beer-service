@@ -1,8 +1,8 @@
 package guru.sfg.beerservice.services;
 
-import guru.sfg.beerservice.web.model.BeerDto;
-import guru.sfg.beerservice.web.model.BeerPagedList;
-import guru.sfg.beerservice.web.model.BeerStyleEnum;
+import guru.sfg.brewery.model.BeerDto;
+import guru.sfg.brewery.model.BeerPagedList;
+import guru.sfg.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.Pageable;
 
 import java.util.UUID;

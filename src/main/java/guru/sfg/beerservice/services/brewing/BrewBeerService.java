@@ -3,7 +3,7 @@ package guru.sfg.beerservice.services.brewing;
 
 import guru.sfg.beerservice.config.JmsConfig;
 import guru.sfg.beerservice.domain.Beer;
-import guru.sfg.common.events.BrewBeerEvent;
+import guru.sfg.brewery.model.events.BrewBeerEvent;
 import guru.sfg.beerservice.repositories.BeerRepository;
 import guru.sfg.beerservice.services.inventory.BeerInventoryService;
 import guru.sfg.beerservice.web.mappers.BeerMapper;
