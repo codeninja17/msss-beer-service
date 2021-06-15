@@ -35,7 +35,7 @@ public class BrewBeerListerner {
 
         NewInventoryEvent newInventoryEvent = new NewInventoryEvent(beerDto);
 
-        log.debug("Brewed beer " + beer.getQuantityOnHand() + " : QOH: " + beerDto.getQuantityOnHand());
+        log.info("Brewed beer " + beer.getQuantityOnHand() + " : QOH: " + beerDto.getQuantityOnHand());
 
         jmsTemplate.convertAndSend(JmsConfig.NEW_INVENTORY_QUEUE, newInventoryEvent);
 

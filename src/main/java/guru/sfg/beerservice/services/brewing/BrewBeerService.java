@@ -33,8 +33,8 @@ public class BrewBeerService {
 
         beerList.stream().forEach(beer -> {
             Integer invOnHand = beerInventoryService.getOnhandInventory(beer.getId());
-            log.debug("inventory in hand : {}",invOnHand);
-            log.debug("Quantity on hand : {}",beer.getQuantityOnHand());
+            log.info("inventory in hand : {}",invOnHand);
+            log.info("Quantity on hand : {}",beer.getQuantityOnHand());
 
             if(beer.getQuantityOnHand() > invOnHand){
                 jmsTemplate.convertAndSend(JmsConfig.BREWING_REQUEST_QUEUE,new BrewBeerEvent(beerMapper.beerToBeerDto(beer)));
